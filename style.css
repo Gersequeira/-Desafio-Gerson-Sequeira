@@ -148,3 +148,22 @@ footer{
         justify-content: end;
     }
 }
+
+.sectionA:hover{
+    transform: scale(1.2);
+}
+
+.sectionB:hover{
+    transform: scale(1.2);
+}
+
+.sectionA{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.sectionB{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
