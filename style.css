@@ -21,6 +21,7 @@ body{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
+    text-align: center;
 }
 
 
@@ -31,7 +32,7 @@ body{
     grid-template-areas:
     "header header header header"
     "nav nav nav nav"
-    "sectionA sectionA sectionB sectionB"
+    "sectionA sectionB "
     "aside aside aside aside"
     "footer footer footer footer"
     ;
@@ -49,22 +50,25 @@ nav{
     background-color: darkgrey;
 }
 
+
 .sectionA{
     grid-template-areas: sectionA;
-    width: 300px;
+    width: 600px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     transition: 2s all;
+    background-color: lightgrey;
 }
 
 .sectionB{
     grid-template-areas: sectionB;
-    width: 300px;
-    margin: 0;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: start;
-    box-shadow: 2px 2px 5px #999;
+    background-color: lightgrey;
 }
 
 aside{
@@ -91,6 +95,23 @@ footer{
     background-color: black;
     color: aliceblue;
 }
+
+.agenda{
+    background-color: lightgrey;
+}
+
+.areas{
+    background-color: lightgrey;
+}
+
+.quienes_somos{
+    background-color: lightgrey;
+}
+
+.preguntas{
+    background-color: lightgrey;
+}
+
 
 @media(min-width: 500px){
     .contenedor{
