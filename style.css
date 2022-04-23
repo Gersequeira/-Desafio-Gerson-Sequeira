@@ -113,6 +113,7 @@ footer{
 }
 
 
+
 @media(min-width: 500px){
     .contenedor{
         grid-template-columns: 4fr 2fr;
@@ -188,3 +189,11 @@ footer{
     transition-duration: 2s;
 }
 
+.col-foot:hover{
+    transform:scale(0.8);
+}
+
+.col-foot{
+    transition-property: all;
+    transition-duration: 0.5s;
+}
