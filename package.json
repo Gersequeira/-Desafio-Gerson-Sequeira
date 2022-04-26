@@ -1,0 +1,19 @@
+{
+  "name": "desafio-gerson-sequeira",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gersequeira/-Desafio-Gerson-Sequeira.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gersequeira/-Desafio-Gerson-Sequeira/issues"
+  },
+  "homepage": "https://github.com/Gersequeira/-Desafio-Gerson-Sequeira#readme"
+}

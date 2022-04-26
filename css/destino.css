@@ -1,0 +1,163 @@
+@media (min-width: 500px) {
+  .contenedor {
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas: "header header" "nav nav" "sectionA sectionA" "sectionB sectionB" "aside aside" "footer footer";
+  }
+
+  .sectionB {
+    size-adjust: auto;
+  }
+
+  .sectionA {
+    size-adjust: auto;
+  }
+}
+@media (min-width: 700px) {
+  .contenedor {
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "header header header" "nav nav nav" "sectionA  sectionA sectionA" "sectionB sectionB sectionB" "aside aside aside" "footer footer footer";
+  }
+}
+@media (min-width: 920px) {
+  .contenedor {
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-areas: "header header header header" "nav nav nav nav" "sectionA  sectionA sectionA sectionA" "aside aside aside aside" "footer footer footer footer";
+  }
+
+  .sectionB {
+    justify-content: center;
+  }
+
+  .sectionA {
+    justify-content: end;
+  }
+}
+.sectionA:hover {
+  transform: scale(1.2);
+}
+
+.sectionB:hover {
+  transform: scale(1.2);
+}
+
+.sectionA {
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.sectionB {
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.col-foot:hover {
+  transform: scale(0.8);
+}
+
+.col-foot {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 0.5fr auto 2fr auto auto;
+  grid-template-areas: "header header header header" "nav nav nav nav" "sectionA sectionB " "aside aside aside aside" "footer footer footer footer";
+}
+
+.main-head {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.219);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.item p {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: gray;
+  border: 1px black solid;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(211, 211, 211);
+}
+
+.sectionA {
+  grid-template-areas: sectionA;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  transition: 2s all;
+  background-color: rgb(211, 211, 211);
+}
+
+.sectionB {
+  grid-template-areas: sectionB;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  background-color: rgb(211, 211, 211);
+}
+
+aside {
+  grid-template-areas: aside;
+  background-color: lightpink;
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+}
+
+.grupo2 {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+.agenda {
+  background-color: rgb(211, 211, 211);
+}
+
+.areas {
+  background-color: rgb(211, 211, 211);
+}
+
+.quienes_somos {
+  background-color: rgb(211, 211, 211);
+}
+
+.preguntas {
+  background-color: rgb(211, 211, 211);
+}
+
+/*# sourceMappingURL=destino.css.map */

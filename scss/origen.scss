@@ -1,0 +1,89 @@
+@import "responsive";
+@import "animaciones";
+@import "estructura";
+
+$gris: rgb(211, 211, 211);
+
+body{
+   background-color: rgba(255, 255, 255, 0.219);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.item p{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: gray;
+    border: 1px black solid;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+nav{
+    
+    grid-area: nav;
+    background-color: $gris;
+}
+
+
+.sectionA{
+    grid-template-areas: sectionA;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    transition: 2s all;
+    background-color: $gris;
+}
+
+.sectionB{
+    grid-template-areas: sectionB;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    background-color: $gris;
+}
+
+aside{
+    grid-template-areas: aside;
+    background-color: lightpink;
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+}
+
+.grupo2{
+   grid-area: footer;
+   display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: black;
+    color: aliceblue;
+}
+
+.agenda{
+    background-color: $gris;
+}
+
+.areas{
+    background-color: $gris;
+}
+
+.quienes_somos{
+    background-color: $gris;
+}
+
+.preguntas{
+    background-color: $gris;
+}
+
+
