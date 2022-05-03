@@ -126,7 +126,7 @@ aside {
   grid-area: aside;
 }
 
-footer {
+footer, .grupo2 {
   grid-area: footer;
   display: flex;
   margin: 10px;
@@ -136,10 +136,6 @@ footer {
 }
 
 .grupo2 {
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   color: aliceblue;
 }
@@ -159,5 +155,10 @@ footer {
 .preguntas {
   background-color: rgb(211, 211, 211);
 }
+
+/*******
+Extende y mixin
+********/
+/*Extend*/
 
 /*# sourceMappingURL=destino.css.map */

@@ -62,13 +62,12 @@ footer{
 }
 
 .grupo2{
-   grid-area: footer;
-   display: flex;
-    justify-content: center;
-    align-items: center;    
+    @extend footer;
     background-color: black;
     color: aliceblue;
 }
+
+
 
 .agenda{
     background-color: $gris;
@@ -87,3 +86,9 @@ footer{
 }
 
 
+/*******
+Extende y mixin
+********/
+
+/*Extend*/
+ 
