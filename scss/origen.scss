@@ -24,26 +24,27 @@ nav{
     grid-area: nav;
     background-color: $gris;
 }
-
-
-.sectionA{
-    grid-template-areas: sectionA;
-    width: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    transition: 2s all;
+// MIXIN //
+@mixin tamanio ($anchor, $altor, $fondo) {
+    width: $anchor;
+    height: $altor;
     background-color: $gris;
 }
 
+.sectionA{
+    @include tamanio(600px,auto,$gris);
+    grid-template-areas: sectionA;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 .sectionB{
+    @include tamanio(600px,auto,$gris);
     grid-template-areas: sectionB;
-    width: 600px;
-    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: start;
-    background-color: $gris;
 }
 
 aside{
@@ -52,6 +53,7 @@ aside{
     grid-area: aside;
 }
 
+/*Extend*/
 footer{
     grid-area: footer;
     display: flex;
@@ -76,7 +78,7 @@ footer{
 .areas{
     background-color: $gris;
 }
-
+ 
 .quienes_somos{
     background-color: $gris;
 }
@@ -86,9 +88,5 @@ footer{
 }
 
 
-/*******
-Extende y mixin
-********/
 
-/*Extend*/
  

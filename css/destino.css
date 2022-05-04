@@ -101,23 +101,23 @@ nav {
 }
 
 .sectionA {
-  grid-template-areas: sectionA;
   width: 600px;
+  height: auto;
+  background-color: rgb(211, 211, 211);
+  grid-template-areas: sectionA;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  transition: 2s all;
-  background-color: rgb(211, 211, 211);
 }
 
 .sectionB {
-  grid-template-areas: sectionB;
   width: 600px;
   height: auto;
+  background-color: rgb(211, 211, 211);
+  grid-template-areas: sectionB;
   margin: 0 auto;
   display: flex;
   justify-content: start;
-  background-color: rgb(211, 211, 211);
 }
 
 aside {
@@ -126,6 +126,7 @@ aside {
   grid-area: aside;
 }
 
+/*Extend*/
 footer, .grupo2 {
   grid-area: footer;
   display: flex;
@@ -155,10 +156,5 @@ footer, .grupo2 {
 .preguntas {
   background-color: rgb(211, 211, 211);
 }
-
-/*******
-Extende y mixin
-********/
-/*Extend*/
 
 /*# sourceMappingURL=destino.css.map */
