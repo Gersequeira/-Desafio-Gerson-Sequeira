@@ -1,7 +1,7 @@
-@media (min-width: 500px) {
+@media (max-width: 300px) {
   .contenedor {
-    grid-template-columns: 4fr 2fr;
-    grid-template-areas: "header header" "nav nav" "sectionA sectionA" "sectionB sectionB" "aside aside" "footer footer";
+    grid-template-columns: 6fr;
+    grid-template-areas: "header header" "nav" "sectionA" "sectionB" "aside" "footer";
   }
 
   .sectionB {
@@ -12,13 +12,13 @@
     size-adjust: auto;
   }
 }
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .contenedor {
     grid-template-columns: 5fr 1fr;
-    grid-template-areas: "header header header" "nav nav nav" "sectionA  sectionA sectionA" "sectionB sectionB sectionB" "aside aside aside" "footer footer footer";
+    grid-template-areas: "header header header" "nav nav nav" "sectionA  sectionA sectionA" "sectionaB sectionB sectionB" "aside aside aside" "footer footer footer";
   }
 }
-@media (min-width: 920px) {
+@media (min-width: 701px) {
   .contenedor {
     grid-template-columns: 4fr 1fr 1fr;
     grid-template-areas: "header header header header" "nav nav nav nav" "sectionA  sectionA sectionA sectionA" "aside aside aside aside" "footer footer footer footer";
